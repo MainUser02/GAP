@@ -355,8 +355,6 @@ header
     width: 100%
     max-height: 20%
     height: 20%
-
-.slider__city-name
     @include font(20px, 26px, 'adineuePROKZ-Black', normal, normal)
     color: #000
 
@@ -643,7 +641,7 @@ header
     @include flex-center(flex, center, center)
     background-color: #e1e1e1
 
-.pros__content
+.pros__content-block
     @include flex-center(flex, space-between, center)
     min-height: 150px
 
@@ -803,6 +801,9 @@ input::placeholder
             &:last-child
                 margin: 0
 
+.footer__hidden
+    display: none
+
 // copyright
 
 .copyright
@@ -822,20 +823,17 @@ input::placeholder
     top: 10px
     right: 10px
     z-index: 30
-    width: 80px
-    height: 80px
+    width: 70px
+    height: 70px
     border-radius: 50%
-    background-color: rgba(255, 255, 255, 0.5)
+    background-color: red
     -webkit-transition: 0.4s
     -moz-transition: 0.4s
     -o-transition: 0.4s
     transition: 0.4s
 
-.burger-menu_button:hover, .burger-menu_lines
-    filter: brightness(0.7)
-
 .burger-menu_button:hover
-    background-color: rgba(255, 255, 255, 0.7)
+    background-color: red
 
 .burger-menu_lines::before,
 .burger-menu_lines::after,
@@ -843,7 +841,7 @@ input::placeholder
     position: absolute
     width: 50px
     height: 3px
-    background-color: #BB1E99
+    background-color: white
     -webkit-transition: 0.4s
     -moz-transition: 0.4s
     -o-transition: 0.4s
@@ -881,7 +879,7 @@ input::placeholder
     display: flex
     flex-flow: column
     height: 100%
-    background-color: #F9AFE9
+    background-color: red
     overflow-y: auto
     right: -100%
     -webkit-transition: 0.8s
@@ -904,7 +902,7 @@ input::placeholder
     text-transform: uppercase
     letter-spacing: 5px
     font-weight: 400
-    color: #BB1E99
+    color: white
     border-bottom: 1px solid #fff
 
 .burger-menu_link:first-child

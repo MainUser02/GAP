@@ -1,0 +1,927 @@
+//fonts 
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic)
+
+@font-face
+    font-family: 'adineuePROKZ-Black'
+    src: url('../fonts/adineuePROKZ-Black.eot')
+    src: url('../fonts/adineuePROKZ-Black.eot') format('embedded-opentype'), url('../fonts/adineuePROKZ-Black.svg') format('svg'),url('../fonts/adineuePROKZ-Black.ttf') format('truetype'),url('../fonts/adineuePROKZ-Black.woff') format('woff'),url('../fonts/adineuePROKZ-Black.woff2') format('woff2')
+    font-weight: normal
+    font-style: normal
+
+// mixins
+@mixin font($font-size, $line-height, $font-family, $font-weight, $font-style)
+    font-size: $font-size
+    line-height: $line-height
+    font-family: $font-family
+    font-weight: $font-weight
+    font-style: $font-style
+
+@mixin flex-center($display, $justify-content, $align-items)
+    display: $display
+    justify-content: $justify-content
+    align-items: $align-items
+
+@mixin background($background-image, $background-repeat, $background-position, $background-size)
+    background-image: $background-image
+    background-repeat: $background-repeat
+    background-position: $background-position
+    background-size: $background-size
+
+/*Обнуление*/
+*,*:before,*:after
+    padding: 0
+    margin: 0
+    border: 0
+    box-sizing: border-box
+
+// others
+a
+    text-decoration: none
+    letter-spacing: 1.5px
+
+li
+    list-style: none
+
+.container
+    max-width: 1300px
+    width: 1300px
+    // background-color: red
+
+// main styles
+header
+    @include flex-center(flex, center, center)
+    background-color: red
+
+.header__top
+    @include flex-center(flex, space-between, center)
+
+.header__content
+    width: 100%
+    height: 50px
+    @include flex-center(flex, space-between, center)
+.header__top-menu
+    max-width: 50%
+    width: 50%
+    height: 100%
+    @include flex-center(flex, center, center)
+
+.header__nav
+    @include flex-center(flex, space-between, center)
+    height: 100%
+    width: 100%
+    li
+        @include flex-center(flex, center, center)
+        @include font(16px, 20px, 'adineuePROKZ-Black', normal, normal)
+        min-width: 10%
+        height: 100%
+        &:first-child
+            background-color: #fff
+            a
+                color: red
+        a
+            color: #fff
+
+.header__information
+    @include flex-center(flex, flex-end, center)
+    max-width: 45%
+    width: 45%
+    &-li
+        @include flex-center(flex, space-between, center)
+        width: 75%
+        li
+            @include font(16px, 20px, 'adineuePROKZ-Black', normal, normal)
+            a
+                color: #fff
+.header__lang
+
+#arrow
+    border: solid #fff
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 3px
+    text-align: center
+    margin: 0px 0px 3px 4px
+
+.active
+    transform: rotate(-180deg)
+
+.down
+    transform: rotate(45deg)
+
+.header__under-menu-lang
+    @include flex-center(none, space-around, center)
+    max-width: 36px
+    position: absolute
+    z-index: 10
+
+.show
+    display: block
+    background-color: red
+
+.lang
+    display: inline-block
+    padding: 10px 0px 0px 0px
+.header__user-area
+
+// sub-header
+.sub-header__section
+    @include flex-center(flex, center, center)
+    min-width: 100%
+    min-height: 100px
+
+.sub-header
+    background-color: #fff
+    @include flex-center(flex, center, center)
+    min-width: 100%
+    min-height: 100px
+    &__content
+        @include flex-center(flex, space-between, center)
+        min-width: 100%
+    &__place
+        @include flex-center(flex, space-between, center)
+        min-width: 14%
+
+    &__logo
+        @include flex-center(flex, center, center)
+        @include font(26px, 30px, 'adineuePROKZ-Black', normal, normal)
+        color: red
+
+    &__city
+        @include flex-center(flex, center, center)
+        @include font(18px, 26px, 'Montserrat', normal, normal)
+        a
+            color: #ffffff
+
+    &__sub-nav
+        max-width: 70%
+        width: 70%
+        height: 100%
+        @include flex-center(flex, center, center)
+    &__nav
+        @include flex-center(flex, space-between, center)
+        min-width: 100%
+        li
+            @include font(18px, 26px, 'adineuePROKZ-Black', normal, normal)
+            a
+                color: #000
+
+.sub-header__under-menu-city
+    @include flex-center(none, space-around, center)
+    position: absolute
+    z-index: 10
+    top: 115px
+
+.show-city
+    display: block
+    background-color: red
+
+#arrow_city
+    border: solid #000000
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 3px
+    text-align: center
+    margin: 0px 0px 3px 4px
+
+#city__change
+    color: #000
+
+// about
+.sub-header__under-menu-about
+    @include flex-center(none, space-around, center)
+    position: absolute
+    z-index: 10
+    top: 115px
+    li
+        a
+            color: #fff
+
+.show-about
+    display: block
+    background-color: red
+
+#arrow_about
+    border: solid #000000
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 3px
+    text-align: center
+    margin: 0px 0px 3px 4px
+
+#about__change
+    color: #000
+
+// main
+
+.main
+    @include flex-center(flex, center, center)
+    margin: 0px 0px 50px 0px
+
+.main__row
+    @include flex-center(flex, space-between, center)
+    flex-direction: column
+    width: 100%
+
+.main__top-column
+    @include flex-center(flex, space-between, center)
+    width: 100%
+
+.main__more-btn
+    width: 150px
+    height: 30px
+    background-color: red
+    border: 3px solid #fff
+    border-radius: 50px
+    @include font(16px, 20px, 'Montserrat', normal, normal)
+    color: #fff
+    margin: 0px 0px 10px 10px
+    cursor: pointer
+
+.main__mortgage
+    @include flex-center(flex, center, center)
+    max-width: 50%
+    width: 50%
+    min-height: 500px
+    &-content
+        width: 100%
+        height: 100%
+        @include flex-center(flex, flex-start, flex-end)
+        min-height: 500px
+        @include background(url(../pictures/family.jpg), no-repeat, center, cover)
+
+.main__car
+    @include flex-center(flex, center, center)
+    width: 24.5%
+    max-width: 24.5%
+    &-content
+        width: 100%
+        height: 100%
+        @include flex-center(flex, flex-start, flex-end)
+        min-height: 500px
+        @include background(url(../pictures/car.jpg), no-repeat, center, cover)
+
+.main__young-family
+    @include flex-center(flex, space-between, center)
+    flex-direction: column
+    width: 22.5%
+    max-width: 22.5%
+    min-height: 500px
+    &-content
+        width: 100%
+        height: 100%
+        @include flex-center(flex, flex-start, flex-end)
+        min-height: 240px
+        @include background(url(../pictures/y_family.jpg), no-repeat, center, cover)
+
+.main-under__column
+    @include flex-center(flex, space-between, center)
+    width: 100%
+    margin: 17px 0px 0px 0px
+
+.main-under__faq-block
+    @include flex-center(flex, space-between, center)
+    flex-direction: column
+    min-height: 500px
+    max-width: 35.5%
+    width: 35.5%
+
+.main-under__garant
+    @include background(url(../pictures/garant.jpg), no-repeat, center, cover)
+    @include flex-center(flex, flex-start, flex-end)
+    width: 100%
+    height: 100%
+    min-height: 240px
+    @include flex-center(flex, flex-start, flex-end)
+.main-under__faq
+    @include background(url(../pictures/faq.png), no-repeat, center, cover)
+    @include flex-center(flex, flex-start, flex-end)
+    width: 100%
+    height: 100%
+    min-height: 240px
+
+.main-under__news
+    @include flex-center(flex, center, center)
+    max-width: 63%
+    width: 63%
+    height: 500px
+    min-height: 500px
+
+// SLIDER
+    // Первичные стили:
+// С ними работает слайд шоу
+
+#slides
+    position: relative
+    height: 100%
+    padding: 0px
+    margin: 0px
+    list-style-type: none
+
+.slide
+    position: absolute
+    left: 0px
+    top: 0px
+    width: 100%
+    height: 100%
+    opacity: 0
+    z-index: 1
+
+    -webkit-transition: opacity 1s
+    -moz-transition: opacity 1s
+    -o-transition: opacity 1s
+    transition: opacity 1s
+
+.showing
+    opacity: 1
+    z-index: 2
+
+// Второстепенные стили:
+// Внешний вид можете изменять
+
+.slider
+    width: 100%
+    height: 100%
+    overflow: hidden
+    li
+        width: 100%
+        height: 100%
+        background-color: #a3a3a3
+        img
+            width: 100%
+            max-height: 80%
+
+.slider__city-name
+    @include flex-center(flex, center, center)
+    width: 100%
+    max-height: 20%
+    height: 20%
+
+.slider__city-name
+    @include font(20px, 26px, 'adineuePROKZ-Black', normal, normal)
+    color: #000
+
+.slide:nth-of-type(1)
+
+.slide:nth-of-type(2)
+
+.slide:nth-of-type(3)
+
+.slide:nth-of-type(4)
+
+// news
+.sub-header__under-menu-news
+    @include flex-center(none, space-around, center)
+    position: absolute
+    z-index: 10
+    top: 115px
+    li
+        a
+            color: #fff
+
+.show-news
+    display: block
+    background-color: red
+
+#arrow_news
+    border: solid #000000
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 3px
+    text-align: center
+    margin: 0px 0px 3px 4px
+
+#news__change
+    color: #000
+
+// programm
+.sub-header__under-menu-programms
+    @include flex-center(none, space-around, center)
+    position: absolute
+    z-index: 10
+    top: 115px
+    li
+        a
+            color: #fff
+
+.show-programms
+    display: block
+    background-color: red
+
+#arrow_programms
+    border: solid #000000
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 3px
+    text-align: center
+    margin: 0px 0px 3px 4px
+
+#programms__change
+    color: #000
+
+// contacts
+
+.sub-header__under-menu-contacts
+    @include flex-center(none, space-around, center)
+    position: absolute
+    z-index: 10
+    top: 115px
+    li
+        a
+            color: #fff
+
+.show-contacts
+    display: block
+    background-color: red
+
+#arrow_contacts
+    border: solid #000000
+    border-width: 0 3px 3px 0
+    display: inline-block
+    padding: 3px
+    text-align: center
+    margin: 0px 0px 3px 4px
+
+#contacts__change
+    color: #000
+
+// advantage
+
+.advantage
+    @include flex-center(flex, center, center)
+    margin: 0px 0px 50px 0px
+
+.advantage__content
+    @include flex-center(flex, space-between, center)
+    min-width: 100%
+    min-height: 100%
+    background-color: #ffffff
+
+.advantage__one, .advantage__two, .advantage__three
+    @include flex-center(flex, space-evenly, center)
+    flex-direction: column
+    width: 33.333%
+    min-height: 200px
+
+.advantage__one
+    background: linear-gradient(to top, #fff, #fcff68)
+
+.advantage__two
+    background: linear-gradient(to top, #fff, #59ffa4)
+
+.advantage__three
+    background: linear-gradient(to top, #fff, #6dd6ff)
+
+.advantage__title
+    @include font(20px, 26px, 'adineuePROKZ-Black', normal, normal)
+
+.advantage__one-content, .advantage__two-content, .advantage__three-content
+    @include flex-center(flex, space-between, center)
+    max-width: 70%
+    @include font(16px, 20px, 'Montserrat', normal, normal)
+
+.advantage__one-picture, .advantage__two-picture, .advantage__three-picture
+
+.advantage__more-btn
+    width: 100%
+    height: 100%
+    @include flex-center(flex, flex-start, flex-end)
+
+// reviews
+
+.reviews
+    @include flex-center(flex, center, center)
+    margin: 0px 0px 50px 0px
+
+.reviews__content
+    @include flex-center(flex, center, center)
+    min-height: 370px
+    flex-direction: column
+
+.reviews__title
+    @include flex-center(flex, flex-start, center)
+    width: 100%
+    min-height: 50px
+    @include font(22px, 26px, 'adineuePROKZ-Black', normal, normal)
+
+.reviews__video
+    @include flex-center(flex, space-between, center)
+    width: 100%
+    min-height: 320px
+    &-content
+        @include flex-center(flex, center, center)
+        max-width: 24.5%
+        height: 320px
+        overflow: hidden
+        video
+            width: 100%
+            height: 100%
+            cursor: pointer
+
+// brands
+.brands
+    @include flex-center(flex, center, center)
+    margin: 0px 0px 50px 0px
+
+.brands__content
+    @include flex-center(flex, center, center)
+    width: 100%
+    min-height: 500px
+    height: 500px
+
+.brands__row
+    @include flex-center(flex, space-evenly, center)
+    flex-direction: column
+    width: 100%
+    height: 100%
+.brands__title
+    @include flex-center(flex, flex-start, center)
+    width: 100%
+    min-height: 50px
+    @include font(22px, 26px, 'adineuePROKZ-Black', normal, normal)
+
+.brands__column
+    @include flex-center(flex, space-between, center)
+    width: 100%
+    div
+        @include flex-center(flex, center, center)
+        max-width: 14.666%
+        img
+            min-width: 100%
+            min-height: 100%
+
+// statistic
+
+.statistic
+    @include flex-center(flex, center, center)
+    margin: 0px 0px 50px 0px
+
+.statistic__content
+    @include flex-center(flex, space-between, center)
+    width: 100%
+    max-height: 200px
+    height: 200px
+
+.statistic__shareholders, .statistic__partners, .statistic__entrepreneus, .statistic__consumers, .statistic__sellers
+    width: 14.666%
+    height: 100%
+    background-color: #fff
+
+.statistic__partners
+
+.statistic__entrepreneus
+
+.statistic__consumers
+
+.statistic__sellers
+
+.statistic__title
+    @include flex-center(flex, center, center)
+    @include font(18px, 22px, 'adineuePROKZ-Black', normal, normal)
+    text-align: center
+    width: 100%
+    height: 40%
+    background-color: red
+
+.statistic__number
+    @include flex-center(flex, center, center)
+    @include font(40px, 50px, 'adineuePROKZ-Black', normal, normal)
+    width: 100%
+    height: 60%
+
+// instaram
+
+.instagram
+    @include flex-center(flex, center, center)
+    margin: 0px 0px 50px 0px
+
+.instagram__content
+    @include flex-center(flex, space-between, center)
+    flex-direction: column
+    width: 100%
+    max-height: 375px
+    height: 375px
+
+.instagram__main-content
+    @include flex-center(flex, space-between, center)
+    flex-direction: row
+    width: 100%
+
+.instagram__title
+    @include flex-center(flex, flex-start, center)
+    width: 100%
+    min-height: 50px
+    @include font(22px, 26px, 'adineuePROKZ-Black', normal, normal)
+
+.insta
+    @include flex-center(flex, center, center)
+    width: 23.9%
+    img
+        width: 309px
+        height: 309px
+
+.instagram__btn-link
+    @include font(16px, 20px, 'adineuePROKZ-Black', normal, normal)
+    position: absolute
+    width: 150px
+    height: 25px
+    background-color: red
+    margin: 10px 0px 0px 0px
+    cursor: pointer
+    color: #fff
+
+.instagram__baspana-content
+
+.instagram__tulpar-content
+
+.instagram__jastar-content
+
+.instagram__otau-content
+
+// pros
+
+.pros
+    @include flex-center(flex, center, center)
+    background-color: #e1e1e1
+
+.pros__content
+    @include flex-center(flex, space-between, center)
+    min-height: 150px
+
+.pros-content
+    @include flex-center(flex, space-evenly, center)
+    flex-direction: row
+    width: 23.9%
+
+.pros__installment-plan
+
+.icon
+
+.pros__title
+    @include font(18px, 20px, 'adineuePROKZ-Black', normal, normal)
+
+.pros__text
+    @include font(12px, 16px, 'adineuePROKZ-Black', normal, normal)
+
+.installment-plan__content
+
+// footer
+
+footer
+    @include flex-center(flex, center, center)
+    min-height: 300px
+    background-color: #b1b1b1
+
+.footer__content
+    @include flex-center(flex, space-between, center)
+    min-height: 300px
+
+.footer__aside
+    width: 37%
+    height: 300px
+    @include flex-center(flex, space-evenly, flex-start)
+    flex-direction: column
+
+.footer__logo
+    @include font(22px, 22px, 'adineuePROKZ-Black', normal, normal)
+    color: #fff
+
+.footer__aside-text
+    @include font(14px, 18px, 'Montserrat', normal, normal)
+    color: #fff
+
+.footer__aside-place
+    @include font(16px, 18px, 'adineuePROKZ-Black', normal, normal)
+    @include flex-center(flex, center, center)
+    color: #fff
+    img
+        margin: 0px 15px 0px 0px
+
+.footer__aside-phone
+    @include font(16px, 18px, 'adineuePROKZ-Black', normal, normal)
+    @include flex-center(flex, center, center)
+    color: #fff
+    img
+        margin: 0px 15px 0px 0px
+
+.footer__aside-mail
+    @include font(16px, 18px, 'adineuePROKZ-Black', normal, normal)
+    @include flex-center(flex, center, center)
+    color: #fff
+    img
+        margin: 0px 15px 0px 0px
+
+.footer__nav
+    width: 43%
+    height: 300px
+    @include flex-center(flex, space-between, flex-start)
+    flex-direction: row
+    @include font(16px, 18px, 'Montserrat', normal, normal)
+
+.footer__projects-content
+    @include flex-center(flex, flex-start, flex-start)
+    flex-direction: column
+    margin: 35px 0px 0px 0px
+    width: 34%
+    color: #fff
+    ul
+        margin: 20px 0px 0px 0px
+        li
+            margin: 5px 0px 0px 0px
+            a
+                color: #fff
+
+.footer__programms-content
+    @include flex-center(flex, flex-start, flex-start)
+    flex-direction: column
+    margin: 35px 0px 0px 0px
+    width: 34%
+    color: #fff
+    ul
+        margin: 20px 0px 0px 0px
+        li
+            margin: 5px 0px 0px 0px
+            a
+                color: #fff
+
+.footer__information
+    @include flex-center(flex, flex-start, flex-start)
+    flex-direction: column
+    margin: 35px 0px 0px 0px
+    color: #fff
+    ul
+        margin: 20px 0px 0px 0px
+        li
+            margin: 5px 0px 0px 0px
+            a
+                color: #fff
+
+.footer__social
+    width: 26%
+    height: 300px
+    @include flex-center(flex, flex-start, flex-end)
+    flex-direction: column
+    @include font(16px, 18px, 'Montserrat', normal, normal)
+    color: #fff
+
+.footer__social-content
+    @include flex-center(flex, center, flex-end)
+    flex-direction: column
+    width: 100%
+    margin: 35px 0px 0px 0px
+
+.footer__social-input-block
+    @include flex-center(flex, flex-end, center)
+    width: 86%
+    input
+        width: 75%
+        min-height: 40px
+        margin: 20px 0px 0px 0px
+        border-top-left-radius: 50px
+        border-bottom-left-radius: 50px
+        padding: 0px 0px 0px 35px
+        &:last-child
+            background-color: #000
+            color: #fff
+            width: 35%
+            border-top-left-radius: 0px
+            border-bottom-left-radius: 0px
+            border-top-right-radius: 50px
+            border-bottom-right-radius: 50px
+            padding: 0
+
+input::placeholder
+    color: #000
+    @include font(14px, 14px, 'adineuePROKZ-Black', normal, normal)
+
+.footer__social-icon
+    margin: 20px 0px 0px 0px
+    div
+        @include flex-center(flex, flex-end, center)
+        margin: 20px 0px 0px 0px
+        a
+            margin: 0px 10px 0px 0px
+            &:last-child
+                margin: 0
+
+// copyright
+
+.copyright
+    @include flex-center(flex, center, flex-start)
+    min-height: 200px
+
+.copyright__content
+    @include font(16px, 20px, 'Montserrat', normal, normal)
+    margin: 20px 0px 0px 0px
+
+// menu-burger
+.burger-menu
+    display: none
+
+.burger-menu_button
+    position: fixed
+    top: 10px
+    right: 10px
+    z-index: 30
+    width: 80px
+    height: 80px
+    border-radius: 50%
+    background-color: rgba(255, 255, 255, 0.5)
+    -webkit-transition: 0.4s
+    -moz-transition: 0.4s
+    -o-transition: 0.4s
+    transition: 0.4s
+
+.burger-menu_button:hover, .burger-menu_lines
+    filter: brightness(0.7)
+
+.burger-menu_button:hover
+    background-color: rgba(255, 255, 255, 0.7)
+
+.burger-menu_lines::before,
+.burger-menu_lines::after,
+.burger-menu_lines
+    position: absolute
+    width: 50px
+    height: 3px
+    background-color: #BB1E99
+    -webkit-transition: 0.4s
+    -moz-transition: 0.4s
+    -o-transition: 0.4s
+    transition: 0.4s
+
+.burger-menu_lines
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+
+.burger-menu_lines::before
+    content: ''
+    top: -12px
+
+.burger-menu_lines::after
+    content: ''
+    top: 12px
+
+.burger-menu_active .burger-menu_lines
+    background-color: transparent
+
+.burger-menu_active .burger-menu_lines::before
+    top: 0
+    transform: rotate(45deg)
+
+.burger-menu_active .burger-menu_lines::after
+    top: 0
+    transform: rotate(-45deg)
+
+.burger-menu_nav
+    padding-top: 120px
+    position: fixed
+    top: 0
+    z-index: 20
+    display: flex
+    flex-flow: column
+    height: 100%
+    background-color: #F9AFE9
+    overflow-y: auto
+    right: -100%
+    -webkit-transition: 0.8s
+    -moz-transition: 0.8s
+    -o-transition: 0.8s
+    transition: 0.8s
+
+.burger-menu_active .burger-menu_nav
+    right: 0
+    -webkit-transition: 0.4s
+    -moz-transition: 0.4s
+    -o-transition: 0.4s
+    transition: 0.4s
+
+.burger-menu_link
+    padding: 18px 35px
+    font-family: 'Roboto', sans-serif
+    font-size: 18px
+    text-decoration: none
+    text-transform: uppercase
+    letter-spacing: 5px
+    font-weight: 400
+    color: #BB1E99
+    border-bottom: 1px solid #fff
+
+.burger-menu_link:first-child
+    border-top: 1px solid #fff
+
+.burger-menu_link:hover
+    filter: brightness(0.9)
+
+.burger-menu_overlay
+    display: none
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+    z-index: 10
+
+.burger-menu_active .burger-menu_overlay
+    display: block
+    background-color: rgba(0, 0, 0, 0.5)

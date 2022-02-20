@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'adineuePROKZ-Black';
+  src: url('adineuePROKZ-Black.eot');
+  src: url('adineuePROKZ-Black.eot?#iefix') format('embedded-opentype'),
+       url('adineuePROKZ-Black.svg#adineuePROKZ-Black') format('svg'),
+       url('adineuePROKZ-Black.ttf') format('truetype'),
+       url('adineuePROKZ-Black.woff') format('woff'),
+       url('adineuePROKZ-Black.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

@@ -1,0 +1,57 @@
+@media (max-width: 1320px) {
+    .brands__column {
+        flex-wrap: wrap;
+    }
+    .instagram__main-content{
+      flex-wrap: wrap;
+    }
+    .instagram__content{
+      max-height: max-content;
+      height: auto;
+    }
+    .insta{
+        width: auto;
+        flex-wrap: wrap;
+    }
+  }
+  
+@media (max-width: 1230px) {
+    .container{
+        width: 960px
+    }
+}
+
+@media (max-width: 1024px) {
+    .header__content, .header__information{
+        justify-content: flex-start;
+    }
+    .burger-menu{
+        display: block
+    }
+    .header__top-menu{
+        display: none
+    }
+    .header__phone, .header__user-area{
+        display: none;
+    }
+    .sub-header__sub-nav{
+        max-width: 80%;
+        width: 80%;
+    }
+    .sub-header__nav li{
+        font-size: 16px;
+    }
+    .sub-header__place{
+        min-width: 17%;
+    }
+    .sub-header__logo{
+        padding-top: 2px;
+    }
+    .sub-header__city{
+        padding-bottom: 4px;
+    }
+
+    .copyright{
+        min-height: 70px;
+    }
+}

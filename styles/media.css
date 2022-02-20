@@ -1,3 +1,268 @@
+@media (min-width: 320px) and (max-width: 424px){
+    .container{
+        width: 300px;
+    }
+
+    .header__content, .header__information{
+        justify-content: flex-start;
+    }
+    .burger-menu{
+        display: block;
+    }
+
+    .burger-menu_nav{
+        right: -155%;
+    }
+
+    .header__top-menu{
+        display: none;
+    }
+    .header__phone, .header__user-area{
+        display: none;
+    }
+
+    .sub-header__content .sub-header__sub-nav{
+        display: none;
+    }
+
+    .sub-header__nav{
+        flex-direction: column;
+    }
+    .sub-header__sub-nav{
+        max-width: 80%;
+        width: 80%;
+    }
+    .sub-header__nav li{
+        font-size: 16px;
+    }
+
+    .sub-header__nav li a{
+        color: #fff;
+    }
+
+    #about__change, #news__change, #programms__change, #contacts__change, #arrow_about{
+        color: #fff;
+    }
+
+    #arrow_about, #arrow_news, #arrow_programms, #arrow_contacts{
+        border: solid #fff;
+        border-width: 0 3px 3px 0;
+    }
+
+    .sub-header__place{
+        min-width: 56.51%;
+        flex-flow: row-reverse;
+    }
+    .sub-header__logo{
+        padding-top: 2px;
+    }
+    .sub-header__city{
+        padding-bottom: 4px;
+    }
+
+    .main__top-column{
+        flex-direction: column;
+        height: 825px;
+    }
+
+    .main__mortgage{
+        max-width: 100%;
+        width: 100%;
+        min-height: 300px;
+        height: 300px;
+    }
+
+    .main__mortgage-content{
+        min-height: auto;
+    }
+
+    .main__car{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main__car-content{
+        height: 300px;
+        min-height: auto;
+    }
+
+    .main__young-family{
+        width: 100%;
+        max-width: 100%;
+        min-height: auto;
+        flex-direction: row;
+    }
+
+    .main__young-family-content{
+        width: 49%;
+        height: 200px;
+        min-height: auto;
+    }
+
+    .main-under__column{
+        flex-direction: column-reverse;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin: 17px 0px 0px 0px;
+    }
+
+    .main-under__faq-block{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        max-width: 100%;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .main-under__garant, .main-under__faq{
+        width: 49%;
+    }
+
+    .main-under__news{
+        max-width: 100%;
+        width: 100%;
+        margin: 0px 0px 17px 0px;
+        height: 320px;
+        min-height: 320px;
+    }
+
+    .main__more-btn{
+        width: 90px;
+        font-size: 12px;
+    }
+
+    .advantage__content{
+        flex-direction: column;
+        min-height: 650px;
+    }
+
+    .advantage__one, .advantage__two, .advantage__three{
+        width: 100%;
+    }
+
+    .reviews__video{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .reviews__video-content{
+        width: 100%;
+        max-width: none;
+    }
+
+    .brands__column {
+        flex-wrap: wrap;
+    }
+
+    .brands__content{
+        height: auto;
+        min-height: none;
+    }
+
+    .brands__column div{
+        width: 25.666%;
+        max-width: none;
+        margin: 10px 0px 10px 0px;
+    }
+
+    .instagram__main-content{
+      flex-wrap: wrap;
+    }
+    .instagram__content{
+      max-height: max-content;
+      height: auto;
+    }
+    .insta{
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 0px 0px 15px 0px;
+    }
+
+    .statistic__content{
+        flex-flow: wrap;
+        height: auto;
+        min-height: 200px;
+        max-height: none;
+    }
+    .statistic__shareholders, .statistic__partners, .statistic__entrepreneus, .statistic__consumers, .statistic__sellers{
+        width: 45%;
+        height: 200px;
+    }
+
+    .pros__content-block{
+        flex-wrap: wrap;
+        min-height: 500px;
+    }
+
+    .pros-content{
+        width: 100%;
+    }
+
+    .installment-plan__content, .overpayment__content, .percent__content, .month__content{
+        width: 160px;
+    }
+
+    .footer__aside {
+        width: 100%;
+    }
+
+    .footer__nav{
+        display: none;
+    }
+
+    .footer__content{
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    .footer__projects-content{
+        width: 30%;
+        margin: 21px 0px 0px 0px;
+    }
+
+    .footer__programms-content{
+        margin: 21px 0px 0px 0px;
+    }
+
+    .footer__information{
+        margin: 21px 0px 0px 0px;
+    }
+
+    .footer__social{
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .footer__social-content{
+        align-items: center;
+        margin: 21px 0px 0px 0px;
+    }
+
+    .footer__social-input-block{
+        flex-direction: column;
+    }
+
+    .footer__social-input-block input{
+        width: 95%;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+
+    .footer__social-input-block input:last-child{
+        width: 95%;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+    }
+
+    .copyright{
+        min-height: 70px;
+    }
+}
+
 @media (min-width: 425px) and (max-width: 679px){
     .container{
         width: 400px;
